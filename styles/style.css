@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap');
+
+
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0b0b0b;
+    font-family: "Stack Sans Text", sans-serif;
+    font-weight: 200;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 60px;
+    background: #0000005c;
+    background: rgba(0, 0, 0, 0.35); /* Fondo semitransparente */
+    backdrop-filter: blur(10px);      /* El efecto de desenfoque para el fondo */
+    -webkit-backdrop-filter: blur(10px); /* Para compatibilidad con Safari */
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.logo {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #ff8a1f;
+    letter-spacing: 2px;
+}
+
+/* NAV */
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+}
+
+.nav-list li a {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: "Stack Sans Text", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.nav-list li a:hover {
+    color: #ff8a1f;
+}
+
+/* BOTÓN MINISTERIOS */
+.dropdown > a {
+    background: #1a1a1a;
+    padding: 10px 18px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dropdown > a::after {
+    content: "▾";
+    font-size: 14px;
+}
+
+.dropdown > a:hover {
+    background: #333;
+    color: #ff8a1f;
+}
+
+/* DROPDOWN MENU */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 42px; /* Un poco más de espacio */
+    left: 0;
+    background: #111;
+    padding: 10px; /* Padding en el contenedor */
+    width: 220px;
+    border-radius: 12px;
+    list-style: none;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.6);
+}
+
+.dropdown-menu li {
+    margin: 0; /* Quitamos el margen para un control más preciso */
+}
+
+.dropdown-menu li:last-child {
+    margin-bottom: 0;
+}
+
+.dropdown-menu .nav-link {
+    display: block; /* Para que el padding y el radio funcionen bien */
+    color: #bbb;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 15px; /* Padding decente */
+    border-radius: 8px; /* Estilo redondeado */
+    transition: background-color 0.2s ease, color 0.2s ease; /* Transición suave */
+}
+
+.dropdown-menu .nav-link:hover {
+    background: #ff8a1f;
+    color: #000;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* BOTÓN ¿ERES NUEVO? */
+.btn-new {
+    background: #ff8a1f;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-new:hover {
+    background: #e47a10;
+}
