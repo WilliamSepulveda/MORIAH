@@ -143,3 +143,157 @@ body {
 .btn-new:hover {
     background: #e47a10;
 }
+
+.main-content{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 7)), url('../assets/image/wallpaper_part_1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken; /* Mejora la mezcla de la capa de color y la imagen */
+    height: 90vh;
+}
+.part_one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    height: 100%;
+}
+
+.section-title{
+    margin-top: 5rem;
+    color: #e47a10;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 8rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    margin-bottom: 60px;
+}
+h3{
+    color: #fff;
+    font-family: "Stack Sans Text", sans-serif;
+    font-size: 2rem;
+}
+.section-description{
+    color: #fff;
+    font-family: "Stack Sans Text", sans-serif;
+    font-size: 1rem;
+    margin-bottom: 50px;
+}
+
+
+.section-buttons{
+    display: flex;
+    gap: 20px;
+    margin-top: 1.5rem;
+}
+.learn-more{
+    padding: 22px 58px;
+    border: none;
+    border-radius: 12px;
+    background: #ff8a1f;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.learn-more:hover{
+    background: #e47a10;
+    box-shadow: (0 40px 15px rgb(255, 255, 255));
+
+}
+
+.time{
+    border: 1px solid #ff8a1f;
+    background-color: transparent;
+    padding: 22px 58px;
+    border-radius: 12px;
+    color: #ff8a1f;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.time:hover {
+    background-color: #ff8a1f;
+    color: #ffffff;
+}
+
+/* seccion de servicios */
+.service {
+  padding: 50px 20px;
+  background: #010101;
+  color: white;
+  text-align: center;
+}
+
+.service .title {
+  font-size: 5rem;
+  font-weight: 900;
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.service .title span {
+  color: #ff7b00;
+}
+
+.cards {
+    font-family: "Bebas Neue", sans-serif;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+  background: #111;
+  border: 1px solid #222;
+  padding: 40px;
+  width: 450px;
+  border-radius: 14px;
+  position: relative;
+  text-align: left;
+transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  border-color: #ff7b00;
+  box-shadow: 0 0 15px rgba(255, 123, 0, 0.5);
+}
+
+
+.day {
+  display: inline-block;
+  background: #2B1F15;
+  border: 1px solid #ff7b00;
+  padding: 10px 40px;
+  border-radius: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #ff7b00;
+}
+
+.hour {
+    font-family: "Bebas Neue", sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.desc {
+    font-weight: 100;
+  font-size: 16px;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+
