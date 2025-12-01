@@ -297,3 +297,171 @@ transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 
+.about-us {
+    display: flex;
+    padding: 80px 5%;
+    background: #000;
+    color: #fff;
+    gap: 60px;
+}
+
+.about-left {
+    width: 50%;
+}
+
+.about-title {
+    font-size: 70px;
+    font-weight: 800;
+    color: #ff6a00;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0 40px 0;
+}
+
+.divider span {
+    display: block;
+    height: 3px;
+    width: 80px;
+    background: #ff6a00;
+}
+
+.divider .dot {
+    width: 10px;
+    height: 10px;
+    background: #ff6a00;
+    border-radius: 50%;
+}
+
+.sub-title {
+    color: #ff6a00;
+    font-size: 28px;
+    margin-top: 35px;
+}
+
+.text {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-top: 10px;
+    max-width: 90%;
+}
+
+.stats {
+    display: flex;
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.stat h3 {
+    font-size: 40px;
+    color: #ff6a00;
+}
+
+.stat p {
+    font-size: 18px;
+    opacity: .8;
+}
+
+.about-right {
+    width: 50%;
+}
+
+.about-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 3px solid #1a1a1a;
+    box-shadow: 0 0 25px rgba(255, 106, 0, 0.2);
+}
+
+/* seccion de ministerios */
+
+
+.ministerios {
+    padding: 80px 5%;
+    background: #0d0d0d;
+    color: #fff;
+}
+
+.title-ministerios {
+    font-size: 55px;
+    font-weight: 800;
+    color: #ff6a00;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.ministerios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 40px;
+}
+
+.min-card {
+    background: #0d0d0d;
+    border-radius: 18px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    animation: 2s linear fadeIn;
+    transition: all 0.5s ease; 
+}
+
+.min-card:hover {
+    border: 2px solid #ff6a00;
+    box-shadow: 0 0 20px rgba(255, 106, 0, 0.5);
+}
+
+.min-img {
+    height: 230px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease; 
+}
+
+.min-img:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+.min-body {
+    padding: 25px;
+}
+
+.icon-circle {
+    width: 55px;
+    height: 55px;
+    background: #ff6a00;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.min-card h3 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.min-card p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    opacity: .9;
+}
+
+.more {
+    color: #ff6a00;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+}
